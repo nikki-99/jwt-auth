@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        .container{
+            height: 100vh;
+            width: 100%;
+            background: linear-gradient(45deg, white,pink);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        input{
+            height: 5vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form action="/login" method="POST">
+        <input type="name" name="name" placeholder="Name">
+         <input type="password" name="password" placeholder="Password">
+         <input type="submit" value="Log in" class="btn btn-sm btn-primary">
+    </form>
+</div>
+</body>
+</html>
